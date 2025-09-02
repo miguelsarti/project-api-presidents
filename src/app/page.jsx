@@ -3,18 +3,20 @@ import React from 'react';
 export default function Home() {
   return (
     <div className="flex justify-center items-center bg-gray-200 min-h-screen">
-      <div className="h-105 w-210 bg-gray-300 flex border border-black rounded-4xl">
-        <div className="flex gap-10 items-center w-full">
+      <div className=" bg-gray-300 rounded-lg p-10 shadow-lg h-90 w-200">
+        <div className="flex gap-6 items-center">
           
-          <div className="">
-            <img src="/img/my-pfp.jpg" alt="Foto de Miguel Sarti" className="rounded-full h-60 w-60" />
+          <div className="flex-shrink-0">
+            <img src="/img/my-pfp.jpg" 
+            alt="Foto de Miguel Sarti"
+            width={150} 
+            height={150} 
+            className="rounded-lg object-cover" />
           </div>
           
-          <div>
-          <ul className="space-y-0">
-            <li className="text-1xl text-right"><span className='font-semibold'>Nome:</span> Miguel Sarti</li>
-            <li className="text-1xl text-right"><span className='font-semibold'>Idade:</span> 17 anos</li>
-          </ul>
+          <div className='flex-1'>
+          <h2 className='text-2xl font-bold mb-3'>Título do Card</h2>
+          <p>ofoeopfkepofkweopfkepwofkpoe</p>
           </div>
 
         </div>

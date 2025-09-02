@@ -22,13 +22,13 @@ export default function Page() {
   }
 
   return (
-    <div className="min-h screen text-center bg-blue-100 p-8 ">
-      <div className="max-w-4xl text-center mx-auto">
+    <div className="min-h screen bg-blue-100 p-8 text-center">
+      <div className="mx-auto text-center mb-12">
         <h1 className="text-center font-bold">Presidentes</h1>
-        <div className="text-center mt-10 mb-6">
+        <div className="text-center mt-10 mb-8">
           <div className="mm-6">
-            <button className="bg-blue-500 text-white px-4 py-2 rounded " onClick={buscarPresidente} disabled={loading}>
-              {loading ? "Carregando..." : "🔎 Buscar presidentes"}
+            <button className="bg-blue-500 text-white px-4 py-2 rounded" onClick={buscarPresidente} disabled={loading}>
+              {loading ? "Carregando..." : "Buscar Presidentes"}
             </button>
           </div>
         </div>

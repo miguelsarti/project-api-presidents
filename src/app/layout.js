@@ -1,10 +1,10 @@
 import "./globals.css";
 
 export const metadata = {
-  title: "Tailwind",
+  title: "Usuário API",
   description: "Projeto para mostrar tudo que eu sei",
   icons: {
-        icon: "/favicon.ico",
+        icon: "/img/favicon.icon.png",
     },
 };
 

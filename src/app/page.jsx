@@ -1,54 +1,24 @@
-"use client"
-import React from 'react'
-import { useState } from 'react'
-import axios from 'axios'
+import React from 'react';
 
-export default function Page() {
-  const [presidente, setPresidente] = useState([])
-  const [loading, setLoading] = useState(false)
-
-  const buscarPresidente = async () => {
-    setLoading(true)
-    try {
-      const response = await axios.get("https://api.sampleapis.com/presidents/presidents")
-      const data = response.data;
-      setPresidente(data)
-      console.table(data)
-    } catch (error) {
-      console.error('Erro ao buscar presidentes:', error)
-    } finally {
-      setLoading(false)
-    }
-  }
-
+export default function Home() {
   return (
-    <div className="min-h screen bg-blue-100 p-8 text-center">
-      <div className="mx-auto text-center mb-12">
-        <h1 className="text-center font-bold">Presidentes</h1>
-        <div className="text-center mt-10 mb-8">
-          <div className="mm-6">
-            <button className="bg-blue-500 text-white px-4 py-2 rounded" onClick={buscarPresidente} disabled={loading}>
-              {loading ? "Carregando..." : "Buscar Presidentes"}
-            </button>
+    <div className="flex justify-center items-center bg-gray-200 min-h-screen">
+      <div className="h-105 w-210 bg-gray-300 flex border border-black rounded-4xl">
+        <div className="flex gap-10 items-center w-full">
+          
+          <div className="">
+            <img src="/img/my-pfp.jpg" alt="Foto de Miguel Sarti" className="rounded-full h-60 w-60" />
           </div>
+          
+          <div>
+          <ul className="space-y-0">
+            <li className="text-1xl text-right"><span className='font-semibold'>Nome:</span> Miguel Sarti</li>
+            <li className="text-1xl text-right"><span className='font-semibold'>Idade:</span> 17 anos</li>
+          </ul>
+          </div>
+
         </div>
       </div>
-
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-        {presidente.map((presidente) => (
-
-          <div className="bg-white p-6 rounded-lg shadow-md" key={presidente.id}>
-            
-            <img src={presidente.photo} className="w-full h-140 object-cover mt-4 mx-auto"  alt="Foto do presidente" />
-            <h3 className="font-bold text-lg text-gray-800">Nome: {presidente.name}</h3>
-            <p className="text-gray-600">Anos na posse: {presidente.yearsInOffice}</p>
-            <p className="text-gray-900">Ordem das posses: {presidente.ordinal}</p>
-            <p className="text-gray-900">Vice-presidente: {presidente.vicePresidents}</p>
-
-          </div>
-        ))}
-      </div>
-
     </div>
   )
 }

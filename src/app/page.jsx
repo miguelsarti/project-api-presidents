@@ -1,32 +1,29 @@
-import React from 'react';
+import React from "react";
+import Link from "next/link";
+import styles from "./page.module.css";
+import Header from "./components/Header/page";
 
 export default function Home() {
   return (
-    <div className="flex justify-center items-center bg-gray-200 min-h-screen">
-      <div className="bg-gray-300 rounded-lg p-10 shadow-lg h-200 w-200">
-        <div className="gap-9 flex-col mx-2">
-          
-          <div className="flex-shrink-0 mx-auto flex items-center flex-col mb-5">
-            <img src="/img/my-pfp.jpg" 
-            alt="Foto de Miguel Sarti"
-            width={250} 
-            height={150} 
-            className="object-cover mb-4" />
-          </div>
-          
-          <div className='flex-1 text-center'>
-            <h2 className='text-2xl font-bold mb-6'>Miguel Sarti</h2>
-          </div>
-          
-          <div className='mb-6 bg-gray-500 p-4 rounded-lg w-100 h-50 items-center text-center flex flex-col'>
-            <p className='text-center text-gray-700 mb-4'>
-              Tenho 17 anos, estudo na turma 2TDS2 na Escola SENAI.
-            </p>
-            <a href='kdosdkos' >aaa</a>
-          </div>
-
+    
+    <div className={styles.container}>
+        <Header />
+      <div className={styles.content}>
+        <div className={styles.imageProfile}>
+          <img
+            src="/img/my-profile.jpg"
+            alt="Imagem de presidentes"
+            className={styles.image}
+          />
         </div>
+        <div className={styles.textContent}>
+          <h1 className={styles.title}>Miguel Sarti</h1>
+          <p className={styles.description}>
+            Eu me chamo Miguel Sarti, tenho 17 anos, sou estudante do SESI e SENAI e atualmente estou na turma 2TDS2. Estou no meu segundo ano de desenvolvimento web, e estou muito animado para continuar aprendendo e crescendo nessa área.
+          </p>
+          <h2 className={styles.motivacional}>"Nunca desista dos seus sonhos, pois cada passo dado é uma conquista rumo ao sucesso!"</h2>
+        </div>  
       </div>
     </div>
-  )
+  );
 }

@@ -1,0 +1,28 @@
+.headerNav {
+  width: 100%;
+  background-color: #e6e6e6;
+  padding: 0rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);   
+  justify-content: flex-start;
+}
+.navMenu {
+  display: flex;
+  gap: 2rem;
+flex-direction: row;
+}
+
+.navLink {
+  color: #000;
+  font-size: 1.15rem;
+  font-weight: 500;
+  text-decoration: none;
+  padding: 0.5rem 1.2rem;
+  border-radius: 0.4rem;
+  transition: background 0.2s;
+  justify-content: flex-end;
+}
+
+.navLink:hover {
+  color: rgb(101, 132, 204);
+  transition: 0.5s;
+}

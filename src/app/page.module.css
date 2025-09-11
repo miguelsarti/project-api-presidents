@@ -78,8 +78,3 @@
     color: #bebebe;
     margin-top: 1rem;
 }
-
-.title:hover {
-    color:  #102770;
-    transition: color 0.6s;
-}

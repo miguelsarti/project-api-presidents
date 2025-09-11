@@ -3,11 +3,12 @@
   width: 100vw;
   max-width: 900px;
   margin: 0 auto;
-  background: linear-gradient(0deg, #bcc9d4 20%, #271e83 100%);
-  padding: 2rem 2rem;
+  background: linear-gradient(0deg, #f6f6f6 0%, #271e83 100%);
+  padding: 2.1rem 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
+  border-bottom: 2px solid #ffffff;
 }
 
 @media (max-width: 900px) {
@@ -53,6 +54,7 @@
   background: #4f2d6b2d;
   box-shadow: 0 2px 8px rgba(59,130,246,0.12);
 }
+
 
 @media (max-width: 600px) {
   .headerNav {

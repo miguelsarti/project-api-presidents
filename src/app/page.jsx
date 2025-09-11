@@ -11,7 +11,7 @@ export default function Home() {
       <div className={styles.content}>
         <div className={styles.imageProfile}>
           <img
-            src="/img/my-profile.jpg"
+            src="/img/my-pic.jpg"
             alt="Imagem de presidentes"
             className={styles.image}
           />

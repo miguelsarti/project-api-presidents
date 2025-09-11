@@ -3,8 +3,8 @@
   width: 100vw;
   max-width: 900px;
   margin: 0 auto;
-  background: linear-gradient(0deg, #bcc9d4 0%, #3c6986 100%);
-  padding: 1.2rem 2rem;
+  background: linear-gradient(0deg, #bcc9d4 20%, #271e83 100%);
+  padding: 2rem 2rem;
   display: flex;
   justify-content: center;
   align-items: center;

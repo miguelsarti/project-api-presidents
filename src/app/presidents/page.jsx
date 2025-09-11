@@ -2,6 +2,7 @@
 import React from 'react'
 import { useState } from 'react'
 import axios from 'axios'
+import Header from '../components/Header/page'
 
 export default function Page() {
   const [presidente, setPresidente] = useState([])
@@ -23,6 +24,7 @@ export default function Page() {
 
   return (
     <div className="min-h screen h-15 bg-blue-100 p-8 text-center mx-auto">
+      <Header />
       <div className="mx-auto text-center mb-12">
         <h1 className="text-center font-bold">Presidentes</h1>
         <div className="text-center mt-10 mb-8">

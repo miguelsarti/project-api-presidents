@@ -1,28 +1,68 @@
+
 .headerNav {
-  width: 100%;
-  background-color: #e6e6e6;
-  padding: 0rem;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.08);   
-  justify-content: flex-start;
+  width: 100vw;
+  max-width: 900px;
+  margin: 0 auto;
+  background: linear-gradient(0deg, #bcc9d4 0%, #3c6986 100%);
+  padding: 1.2rem 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+@media (max-width: 900px) {
+  .headerNav {
+    max-width: 99vw;
+    padding: 1rem 0.5rem;
+    border-radius: 0.5rem;
+  }
+  .navMenu ul {
+    gap: 1rem;
+  }
+}
+
 .navMenu {
   display: flex;
+  flex-direction: row;
   gap: 2rem;
-flex-direction: row;
+  align-items: center;
+}
+
+.navMenu ul {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .navLink {
-  color: #000;
+  color: #fff;
   font-size: 1.15rem;
   font-weight: 500;
   text-decoration: none;
-  padding: 0.5rem 1.2rem;
+  padding: 0.6rem 1.4rem;
   border-radius: 0.4rem;
-  transition: background 0.2s;
-  justify-content: flex-end;
+  transition: background 0.2s, color 0.2s;
+  background: transparent;
+  position: relative;
 }
 
 .navLink:hover {
-  color: rgb(101, 132, 204);
-  transition: 0.5s;
+  color: #fff;
+  background: #1f07612d;
+  box-shadow: 0 2px 8px rgba(59,130,246,0.12);
+}
+
+@media (max-width: 600px) {
+  .headerNav {
+    padding: 0.5rem 0;
+  }
+  .navMenu ul {
+    gap: 1rem;
+  }
+  .navLink {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+  }
 }

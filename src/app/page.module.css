@@ -4,21 +4,33 @@
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: #f3f4f6;
+    background: linear-gradient(0deg, #f6f6f6 90%, #3c6986 100%);
 }
 
 .content {
-    background-color: #e5e7eb;
-    border-radius: 0.5rem;
-    padding: 3rem;
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-    height: 24rem;
-    width: 60rem;
+    background: linear-gradient(0deg, #bcc9d4 0%, #3c6986 100%);
+    border-radius: 1rem;
+    padding: 2.5rem 2rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    min-height: 18rem;
+    width: 100vw;
+    max-width: 900px;
     display: flex;
     align-items: center;
     margin: auto;
     justify-content: center;
-    gap: 3rem;
+    gap: 2rem;
+}
+
+@media (max-width: 700px) {
+    .content {
+        flex-direction: column;
+        padding: 1.2rem 0.5rem;
+        min-height: unset;
+        width: 98vw;
+        max-width: 99vw;
+        gap: 1rem;
+    }
 }
 
 
@@ -50,12 +62,19 @@
 .title {
     font-size: 1.6rem;
     font-weight: 700;
-    color: #111827;
     margin-bottom: 1rem;
+    color: #fff;
 }
 
 .description {
     font-size: 1.125rem;
-    color: #374151;
     line-height: 1.75rem;
+    color: #fff;
+}
+
+.motivacional {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: #000000;
+    margin-top: 1rem;
 }

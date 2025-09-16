@@ -4,11 +4,11 @@
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: linear-gradient(0deg, #f6f6f6 90%, #271e80 100%);
+    background-color: #f6f6f6;
 }
 
 .content {
-    background: linear-gradient(0deg, #000000 0%, #271e80 100%);
+    background: linear-gradient(27deg, #ffffff 10%, #271e80 300%);
     border-radius: 1rem;
     padding: 2.5rem 2rem;
     box-shadow: 0 4px 12px rgba(0,0,0,0.08);
@@ -63,18 +63,18 @@
     font-size: 1.6rem;
     font-weight: 700;
     margin-bottom: 1rem;
-    color: #fff;
+    color: #000000;
 }
 
 .description {
     font-size: 1.125rem;
     line-height: 1.75rem;
-    color: #fff;
+    color: #0c0c0c;
 }
 
 .motivacional {
     font-size: 1rem;
     line-height: 1.5rem;
-    color: #bebebe;
+    color: #575757;
     margin-top: 1rem;
 }

@@ -1,13 +1,12 @@
 import React from "react";
 import Link from "next/link";
 import styles from "./page.module.css";
-import Header from "./components/Header/page";
 
 export default function Home() {
   return (
     
     <div className={styles.container}>
-        <Header />
+       
       <div className={styles.content}>
         <div className={styles.imageProfile}>
           <img

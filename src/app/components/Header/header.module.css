@@ -1,7 +1,7 @@
 
 .headerNav {
   width: 100vw;
-  max-width: 900px;
+  max-width: 100%;
   margin: 0 auto;
   background: linear-gradient(0deg, #f6f6f6 0%, #271e83 100%);
   padding: 2.1rem 2rem;

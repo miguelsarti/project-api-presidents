@@ -1,0 +1,15 @@
+    .footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: linear-gradient(180deg, #f6f6f6 0%, #271e83 110%);
+        color: #fff;
+        padding: 1.4rem;
+        border-top: 2px solid #ffffff;
+    }
+    
+    .text {
+        font-size: 1.2rem;
+        margin: 0;
+        font-weight: bold;
+    }
